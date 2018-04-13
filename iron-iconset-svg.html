@@ -84,7 +84,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     created: function () {
       this._meta =
         new Polymer.IronMeta({ type: 'iconset', key: null, value: null });
-
+      setTimeout(() => {
+        this._nameChanged();
+      }, 0);
     },
 
     attached: function () {
